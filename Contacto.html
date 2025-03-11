@@ -28,17 +28,33 @@
     <!-- Sección de Contacto -->
     <section id="Contacto">
         <h2>Contacto</h2>
-        <form>
+    <form>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"><br><br>
+            <input type="text" id="nombre" name="nombre"><br><br> 
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email"><br><br> 
+
             <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
-            <input type="submit" value="Enviar">
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br> 
+
+            <input type="submit" value="Enviar"> 
+            <button type="button" class="btn" onclick="register()">Registrar</button>
         </form>
+
+        <!-- Aquí se mostrarán los registros -->
+        <div id="contactosRegistrados">
+            <h3>Registros de Contactos:</h3>
+            <ul id="registros">
+                <!-- Los registros se agregarán aquí dinámicamente -->
+            </ul>
+        </div>
+
         <p>© 2025 Tienda de Zapatos Ámbar Shoes Mexicali. Todos los derechos reservados.</p>
     </section>
+
+    <script src="./scripts.js/register.js"></script>
+   
 </body>
 </html>
 
