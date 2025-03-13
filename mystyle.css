@@ -6,18 +6,50 @@ body {
     background-color: #f4f4f4;
 }
 
+.tallas-img{
+    width: 300px;
+}
+
 /* Imagen grande de encabezado */
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center; /* Centra el rectángulo horizontalmente */
+    align-items: center; /* Centra el rectángulo verticalmente */
+    height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+}
+
+/* Estilo para el rectángulo */
+.rectangulo {
+    width: 80%; /* Ancho del rectángulo, ajustable */
+    max-width: 600px; /* Tamaño máximo para evitar que crezca demasiado */
+    height: 300px; /* Alto del rectángulo, ajustable */
+    background-color: #000000; /* Color de fondo, ajustable */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    border: 2px solid #000000; /* Borde del rectángulo, ajustable */
+    border-radius: 10px; /* Esquinas redondeadas, ajustable */
+}
+
+/* Estilo para la imagen */
+.header-image {
+    max-width: 200px; /* La imagen se ajustará al tamaño del rectángulo */
+    height: auto; /* Mantiene las proporciones de la imagen */
+}
+
 .header {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.header-image {
+/* .header-image {
     width: 100%;
-    height: 250px;  /* Ajusté el tamaño del logo al tamaño del banner */
+    height: 250px;  
     object-fit: cover;
-}
+} */
 
 /* Menú de navegación */
 .menu-nav {
